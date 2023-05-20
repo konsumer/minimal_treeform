@@ -1,0 +1,28 @@
+/Users/konsumer/.nimble/pkgs2/windy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f/windy/http.nim(82, 54) template/generic instantiation of `async` from here
+/Users/konsumer/.nimble/pkgs2/windy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f/windy/http.nim(112, 38) template/generic instantiation of `request` from here
+/Users/konsumer/.choosenim/toolchains/nim-1.6.12/lib/pure/httpclient.nim(1086, 14) Warning: Deprecated since v1.5; use HttpMethod enum instead; string parameter httpMethod is deprecated [User]
+/Users/konsumer/.cache/nim/test_graphics_d/@m..@s..@s..@s.nimble@spkgs2@swindy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f@swindy@splatforms@smacos@sobjc.nim.c:122:10: error: incompatible function pointer types assigning to 'tyProc__ELDcQK9cgdUyzj5KMs6i3sA' (aka 'long long (*)(long long, long long)') from 'tyProc__ln4kdL5W9bbX4a1xl8nnVXQ' (aka 'void (*)(void)') [-Wincompatible-function-pointer-types]
+        msgSend = Dl_3674210320_;
+                ^ ~~~~~~~~~~~~~~
+/Users/konsumer/.cache/nim/test_graphics_d/@m..@s..@s..@s.nimble@spkgs2@swindy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f@swindy@splatforms@smacos@sobjc.nim.c:233:10: error: incompatible function pointer types assigning to 'tyProc__GzHItWOV8mXMIORHhW0e0Q' (aka 'long long (*)(long long, long long, char *)') from 'tyProc__ln4kdL5W9bbX4a1xl8nnVXQ' (aka 'void (*)(void)') [-Wincompatible-function-pointer-types]
+        msgSend = Dl_3674210320_;
+                ^ ~~~~~~~~~~~~~~
+/Users/konsumer/.cache/nim/test_graphics_d/@m..@s..@s..@s.nimble@spkgs2@swindy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f@swindy@splatforms@smacos@sobjc.nim.c:252:10: error: incompatible function pointer types assigning to 'tyProc__RgKKSNSZBwbKmv4OT9c1inQ' (aka 'char *(*)(long long, long long)') from 'tyProc__ln4kdL5W9bbX4a1xl8nnVXQ' (aka 'void (*)(void)') [-Wincompatible-function-pointer-types]
+        msgSend = Dl_3674210320_;
+                ^ ~~~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+4 errors generated.
+Error: execution of an external compiler program 'clang -c  -w -ferror-limit=3   -I/Users/konsumer/.choosenim/toolchains/nim-1.6.12/lib -I/Users/konsumer/Desktop/minimal_treeform/tests -o /Users/konsumer/.cache/nim/test_graphics_d/@m..@s..@s..@s.nimble@spkgs2@swindy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f@swindy@splatforms@smacos@sobjc.nim.c.o /Users/konsumer/.cache/nim/test_graphics_d/@m..@s..@s..@s.nimble@spkgs2@swindy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f@swindy@splatforms@smacos@sobjc.nim.c' failed with exit code: 1
+
+
+/Users/konsumer/.cache/nim/test_graphics_d/@m..@s..@s..@s.nimble@spkgs2@swindy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f@swindy@splatforms@smacos@splatform.nim.c:820:10: error: incompatible function pointer types assigning to 'tyProc__ELDcQK9cgdUyzj5KMs6i3sA' (aka 'long long (*)(long long, long long)') from 'tyProc__ln4kdL5W9bbX4a1xl8nnVXQ' (aka 'void (*)(void)') [-Wincompatible-function-pointer-types]
+        msgSend = Dl_3674210320_;
+                ^ ~~~~~~~~~~~~~~
+/Users/konsumer/.cache/nim/test_graphics_d/@m..@s..@s..@s.nimble@spkgs2@swindy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f@swindy@splatforms@smacos@splatform.nim.c:829:10: error: incompatible function pointer types assigning to 'tyProc__mV9cvtvcTvdBpTeuL8riRFQ' (aka 'void (*)(long long, long long, long long)') from 'tyProc__ln4kdL5W9bbX4a1xl8nnVXQ' (aka 'void (*)(void)') [-Wincompatible-function-pointer-types]
+        msgSend = Dl_3674210320_;
+                ^ ~~~~~~~~~~~~~~
+/Users/konsumer/.cache/nim/test_graphics_d/@m..@s..@s..@s.nimble@spkgs2@swindy-0.0.0-e0506a1d00e0daf1ffa44f00959853bbae29b01f@swindy@splatforms@smacos@splatform.nim.c:837:10: error: incompatible function pointer types assigning to 'tyProc__mV9cvtvcTvdBpTeuL8riRFQ' (aka 'void (*)(long long, long long, long long)') from 'tyProc__ln4kdL5W9bbX4a1xl8nnVXQ' (aka 'void (*)(void)') [-Wincompatible-function-pointer-types]
+        msgSend = Dl_3674210320_;
+                ^ ~~~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+4 errors generated.

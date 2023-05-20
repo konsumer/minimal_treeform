@@ -10,10 +10,19 @@ You should see a window with a heart on `test_graphics` and hear a xylophone for
 ### OSX Ventura 13.3.1 (arm64)
 
 ```
-Nim Compiler Version 1.6.10 [MacOSX: arm64]
+Nim 1.6.10 [MacOSX: arm64]
 nimble v0.13.1
 ```
 
 - Graphics works
 - Sound works
 
+### OSX Ventura 13.3.1 (intel64)
+
+```
+Nim 1.6.12 [MacOSX: amd64]
+nimble v0.14.0
+```
+
+- Graphics has [lots of errors](results-graphics-mac-intel.txt)
+- Sound works
