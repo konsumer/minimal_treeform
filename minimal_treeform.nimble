@@ -4,9 +4,8 @@ version       = "0.0.0"
 author        = "David Konsumer"
 description   = "A new awesome nimble package"
 license       = "MIT"
-srcDir        = "src"
-bin           = @["minimal_treeform"]
 
+skipDirs = @["tests"]
 
 # Dependencies
 

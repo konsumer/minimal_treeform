@@ -1,2 +1,4 @@
 .DS_Store
 /minimal_treeform
+tests/test_sound
+tests/test_graphics
