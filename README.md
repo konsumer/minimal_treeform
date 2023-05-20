@@ -27,7 +27,7 @@ nimble v0.14.0
 - Graphics has [lots of errors](results-graphics-mac-intel.txt)
 - Sound works
 
-## Docker (intel64)
+## Linux Docker (intel64)
 
 ```
 Nim 1.6.12 [Linux: amd64]
@@ -45,3 +45,8 @@ apt install -y libgl1-mesa-glx libopenal-dev
 
 - Graphics compiles
 - Sound compiles
+
+Obviously, it can't open GL/audio in docker, but it seems to otherwise work.
+
+
+
