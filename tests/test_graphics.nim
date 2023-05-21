@@ -1,9 +1,17 @@
 # this will test boxy (and pixie) and windy
 
-import boxy, opengl, windy
+import boxy, opengl, opengl/glut
 
-let window = newWindow("minimal", ivec2(200, 200))
-makeContextCurrent(window)
+let windowSize = ivec2(200, 200)
+
+proc display() {.cdecl.}
+
+glutInit()
+glutInitDisplayMode(GLUT_DOUBLE)
+
+glutInitWindowSize(windowSize.x, windowSize.y)
+discard glutCreateWindow("minimal")
+glutDisplayFunc(display)
 loadExtensions()
 
 let bxy = newBoxy()
@@ -27,13 +35,14 @@ image.fillPath(
 )
 bxy.addImage("heart", image)
 
+
 var frame: int
-window.onFrame = proc() =
-  bxy.beginFrame(window.size)
+proc display() {.cdecl.} =
+  bxy.beginFrame(windowSize)
   bxy.drawImage("heart", center =vec2(100, 100), angle = 0)
   bxy.endFrame()
-  window.swapBuffers()
+  glutSwapBuffers()
   inc frame
+  glutPostRedisplay()
 
-while not window.closeRequested:
-  pollEvents()
+glutMainLoop()
