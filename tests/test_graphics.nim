@@ -1,9 +1,20 @@
 # this will test boxy (and pixie) and windy
 
-import boxy, opengl, windy
+import staticglfw
+import opengl
+import boxy
 
-let window = newWindow("minimal", ivec2(200, 200))
-makeContextCurrent(window)
+let windowSize = ivec2(200, 200)
+
+if init() == 0:
+  raise newException(Exception, "Failed to Initialize GLFW")
+
+windowHint(RESIZABLE, false.cint)
+windowHint(CONTEXT_VERSION_MAJOR, 4)
+windowHint(CONTEXT_VERSION_MINOR, 1)
+
+var window = createWindow(windowSize.x, windowSize.y, "minimal", nil, nil)
+window.makeContextCurrent()
 loadExtensions()
 
 let bxy = newBoxy()
@@ -17,7 +28,7 @@ var path = parsePath("""
   z
 """)
 
-let image = newImage(200, 200)
+let image = newImage(windowSize.x, windowSize.y)
 image.fill(color(1, 1, 1, 0.1))
 image.fillPath(
   path,
@@ -28,12 +39,13 @@ image.fillPath(
 bxy.addImage("heart", image)
 
 var frame: int
-window.onFrame = proc() =
-  bxy.beginFrame(window.size)
-  bxy.drawImage("heart", center =vec2(100, 100), angle = 0)
+while windowShouldClose(window) != 1:
+  bxy.beginFrame(windowSize)
+  bxy.drawImage("heart", center =vec2(windowSize.x/2, windowSize.y/2), angle = 0)
   bxy.endFrame()
   window.swapBuffers()
   inc frame
-
-while not window.closeRequested:
   pollEvents()
+
+window.destroyWindow()
+terminate()
